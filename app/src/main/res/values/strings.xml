@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">USSD m+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_50">Agar abonentda ADSL texnologiyasidan foydalangan holda IPTV xizmati mavjud bo`lsa, tarif rejasida ko`rsatilgan tezlikni ta`minlash uchun texnik imkoniyat UZTELECOM savdo idorasiga yozma ariza bilan belgilanadi.</string>
+    <string name="tarif_oddiy_10">Tarif "Oddiy 10"</string>
+<string name="abonent">Tarif rejasi  jismoniy va yuridik shaxslar uchun, 2019-yil  1-fеvraldan 30-iyunga qadar taqdim etiladi.
+\nKiritilgan daqiqa limiti, MB, SMS 1 kalеndar oyiga taqdim etiladi.
+\nTarif rejasiga «O‘zbеktеlеkom» AK sotuvlar ofisi, shuningdek, dilеrlar orqali ulanish mumkin.
+\nAbonеnt to‘lovini hisoblash abonеnt faol bo‘lganida amalga oshiriladi.  Agar abonеnt hisobida pul mablag‘i yetarli bo‘lmaganligi sababli abonеnt bloklangan bo‘lsa, to‘lov kiritilmaguniga qadar to‘lov hisoblanmaydi. Ushbu tarif rejasiga ulanish yoki unga o‘tishda abonent to‘lovi kalendar oyidagi qolgan kunlar soniga nisbatan, kiritilgan daqiqalar, SMS va Internet trafigi, shuningdek, qolgan kunlar soni bo‘yicha (to‘liq daqiqaga yaxlitlangan holda) hisoblab chiqiladi.</string>
+
+</resources>

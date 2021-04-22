@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ussdm.fragments.menu_fragment.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_reklamaFragment"
+            app:destination="@id/reklamaFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_MBFragment"
+            app:destination="@id/MBFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_SMSFragment"
+            app:destination="@id/SMSFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_xizmatFragment"
+            app:destination="@id/xizmatFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_USSDFragment"
+            app:destination="@id/USSDFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_tarifFragment"
+            app:destination="@id/tarifFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/reklamaFragment"
+        android:name="com.example.ussdm.fragments.fragment_reklama.ReklamaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_reklama" />
+    <fragment
+        android:id="@+id/operatorFragment"
+        android:name="com.example.ussdm.fragments.service.OperatorFragment"
+        android:label="fragment_operator"
+        tools:layout="@layout/fragment_operator" />
+    <fragment
+        android:id="@+id/balansFragment"
+        android:name="com.example.ussdm.fragments.service.BalansFragment"
+        android:label="fragment_balans"
+        tools:layout="@layout/fragment_balans" />
+    <fragment
+        android:id="@+id/sozlamalarFragment"
+        android:name="com.example.ussdm.fragments.service.SozlamalarFragment"
+        android:label="fragment_sozlamalar"
+        tools:layout="@layout/fragment_sozlamalar" />
+    <fragment
+        android:id="@+id/yangiliklarFragment"
+        android:name="com.example.ussdm.fragments.service.YangiliklarFragment"
+        android:label="fragment_yangiliklar"
+        tools:layout="@layout/fragment_yangiliklar" />
+    <fragment
+        android:id="@+id/MBFragment"
+        android:name="com.example.ussdm.fragments.menu_fragment.MBFragment"
+        android:label="Internet paketlar"
+        tools:layout="@layout/fragment_m_b" />
+    <fragment
+        android:id="@+id/SMSFragment"
+        android:name="com.example.ussdm.fragments.menu_fragment.SMSFragment"
+        android:label="SMS paketlar"
+        tools:layout="@layout/fragment_s_m_s" />
+    <fragment
+        android:id="@+id/USSDFragment"
+        android:name="com.example.ussdm.fragments.menu_fragment.USSDFragment"
+        android:label="USSD kodlar"
+        tools:layout="@layout/fragment_u_s_s_d" />
+    <fragment
+        android:id="@+id/xizmatFragment"
+        android:name="com.example.ussdm.fragments.menu_fragment.XizmatFragment"
+        android:label="Xizmatlar"
+        tools:layout="@layout/fragment_xizmat" />
+    <fragment
+        android:id="@+id/tarifFragment"
+        android:name="com.example.ussdm.fragments.menu_fragment.TarifFragment"
+        android:label="Tariflar"
+        tools:layout="@layout/fragment_tarif" />
+</navigation>

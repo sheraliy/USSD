@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.fragment_reklama.ReklamaFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_tarif"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="#FF228BD6"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.27"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintWidth_percent="0.87">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tarif_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Oddiy 10"
+                android:textColor="#FFFFD12D"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_minut"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/phone"
+                app:cardBackgroundColor="#FFFFD12D"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="0dp"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tarif_name">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/phone" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_internet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/phone"
+                app:cardBackgroundColor="#FFFFD12D"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tarif_name">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/web" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_sms"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/phone"
+                app:cardBackgroundColor="#FFFFD12D"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="0dp"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tarif_name">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/message" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="10 MIN"
+                android:textColor="#FFFFD12D"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/card_minut"
+                app:layout_constraintRight_toRightOf="@id/card_minut"
+                app:layout_constraintTop_toBottomOf="@id/card_minut" />
+
+            <TextView
+                android:id="@+id/mb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="10 MB"
+                android:textColor="#FFFFD12D"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_minut" />
+
+
+            <TextView
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="10 SMS"
+                android:textColor="#FFFFD12D"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/card_sms"
+                app:layout_constraintRight_toRightOf="@id/card_sms"
+                app:layout_constraintTop_toBottomOf="@id/card_minut" />
+
+            <TextView
+                android:id="@+id/reklama_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 сумав в месяц"
+                android:textColor="#FF68D2FF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sms" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintTop_toBottomOf="@id/reklama_bottom_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_cons_rec_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.83"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oddiy 10"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarif"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/tv_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/abonent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abonent to`lovi"
+            android:textColor="#FF2E2E2E"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <TextView
+            android:id="@+id/tv_oylik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.000 so`m"
+            android:textColor="#FF2E2E2E"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#FF9C9C9C"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/abonent"
+            app:layout_constraintRight_toRightOf="@id/tv_oylik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_oylik"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintWidth_percent="0.855" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.47"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear"
+            app:layout_constraintVertical_bias="0.08"
+            app:layout_constraintWidth_percent="0.85">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/abonent"
+                android:textColor="#FF8C8A8A" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/btn_batafsil"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:background="@drawable/back_b"
+            android:gravity="center"
+            android:text="Batafsil"
+            android:textAllCaps="false"
+            android:textColor="#FF505050"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scroll"
+            app:layout_constraintWidth_percent="0.35" />
+
+        <TextView
+            android:id="@+id/btn_daer"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="Ulanish"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scroll"
+            app:layout_constraintWidth_percent="0.35" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
